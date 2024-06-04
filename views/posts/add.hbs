@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Post</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Add Post</h1>
+  <form action="/posts/add" method="POST">
+    <label for="content">Content:</label>
+    <textarea id="content" name="content" required></textarea>
+    <label for="imageUrl">Image URL:</label>
+    <input type="text" id="imageUrl" name="imageUrl">
+    <button type="submit">Add Post</button>
+  </form>
+</body>
+</html>

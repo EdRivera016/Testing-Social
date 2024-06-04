@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Posts</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Posts</h1>
+  <a href="/posts/add">Add New Post</a>
+  <ul>
+    {{#each posts}}
+    <li>
+      <h2>{{this.User.username}}</h2>
+      <p>{{this.content}}</p>
+      {{#if this.imageUrl}}
+      <img src="{{this.imageUrl}}" alt="Post Image">
+      {{/if}}
+      <a href="/posts/{{this.id}}">Comments</a>
+    </li>
+    {{/each}}
+  </ul>
+</body>
+</html>
